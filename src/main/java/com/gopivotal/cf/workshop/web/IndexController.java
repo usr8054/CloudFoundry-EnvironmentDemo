@@ -43,7 +43,7 @@ public class IndexController {
 	public String index(Model model) throws Exception {
 			
 		Date date = new Date();
-		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy h:mm a");
+		DateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy h:mm a");
 		String serverTime = dateFormat.format(date);
 		model.addAttribute("serverTime", serverTime);
 		
